@@ -28,11 +28,11 @@ function addTodo(event) {
     const trashdButton = document.createElement('button');
     trashdButton.innerHTML = '<i class ="fas fa-trash"></i>'; //adding this i-tag inside
     trashdButton.classList.add("complete-btn");
-    todoDiv.appendChild(trashButton); //appeding the button to the div, again as in above
+    todoDiv.appendChild(trashdButton); //appeding the button to the div, again as in above
       //now in the end, attach it to the ul in the html file (index)
       //so append to list
     todoList.appendChild(todoDiv);    
 
 
-    console.log("is this working?");
+    console.log("is this working?");  
 }
