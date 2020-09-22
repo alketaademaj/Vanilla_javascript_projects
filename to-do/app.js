@@ -5,7 +5,7 @@ const todoList = document.querySelector(".todo-list");
 
 // Event listeners
 todoButton.addEventListener("click", addTodo);
-
+todoList.addEventListener("click", deleteCheck);
 
 // Functions
 function addTodo(event) {
@@ -16,7 +16,7 @@ function addTodo(event) {
     todoDiv.classList.add("todo");
     //creating the li list
     const newTodo = document.createElement("li");
-    newTodo.innerText = "test";
+    newTodo.innerText = todoInput.value;
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo); 
     //check mark button
@@ -27,12 +27,28 @@ function addTodo(event) {
       //check track button
     const trashdButton = document.createElement('button');
     trashdButton.innerHTML = '<i class ="fas fa-trash"></i>'; //adding this i-tag inside
-    trashdButton.classList.add("complete-btn");
+    trashdButton.classList.add("trash-btn");
     todoDiv.appendChild(trashdButton); //appeding the button to the div, again as in above
       //now in the end, attach it to the ul in the html file (index)
       //so append to list
     todoList.appendChild(todoDiv);    
-
-
-    console.log("is this working?");  
+    //clear to do input value
+    todoInput.value = "";
 }
+
+   function deleteCheck(e) {
+     const item = e.target;
+      //deleting todo
+      if(item.classList[0] === 'trash-btn'){
+        const todo = item.parentElement;
+        todo.remove();
+      }
+
+       //check mark
+       if(item.classList[0] === 'complete-btn'){
+        const todo = item.parentElement;
+        todo.classList.toggle('completed');
+       }
+    }
+
+
