@@ -137,6 +137,8 @@ function addTodo(event) {
             todos = JSON.parse(localStorage.getItem('todos')); //parse it back into an array
         }
         //remove the position of the element we are clicking on
-        
+        const todoIndex = todo.children[0].innerText;
+        todos.splice(todos.indexOf(todoIndex), 1);
+        localStorage.setItem("todos", JSON.stringify(todos));
         }
   
