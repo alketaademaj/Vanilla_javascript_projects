@@ -22,6 +22,7 @@ function addTodo(){
     deleteElement.innerText = "delete"; // <button>delete</button>
     completedElement.innerText = "completed";
     deleteElement.setAttribute("class", "delete"); //<button class="delete">delete</button>
+    deleteElement.setAttribute("id", "on-click"); //<button class="delete">delete</button>
     completedElement.setAttribute("id", "completating");
     //deleteElement.setAttribute("id", "deleting");
     //insert li element within our ul tag
