@@ -19,3 +19,5 @@ divided();
     var result = 12 / 0.75;
     console.log("12 divided by 0.75 is ", result);
 }())
+
+//exercises
