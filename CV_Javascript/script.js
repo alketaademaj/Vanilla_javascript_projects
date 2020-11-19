@@ -1,8 +1,14 @@
 var changeColor = document.querySelector('.switch') //.switch cause it is a class
 var bodyColor = document.querySelector('body') //element
 var changeMode = document.getElementById('mode')
+var button = document.getElementById('answer')
+var fibonacciLoop = document.getElementById('loops')
+var displaying = document.getElementById('display')
 
 changeColor.addEventListener("click", DarkLightMode);
+button.addEventListener("click", function(){
+    fibonacci(fibonacciLoop.value)
+});
 
 function DarkLightMode() {
     console.log(changeColor.childNodes)
@@ -18,19 +24,34 @@ function DarkLightMode() {
     }
 }
 
-function fibonacci(a) { 
-    var array = [0,1]
-    if(a>=1) {
-        for(var x = 0; a>array.length; x++) {
-            var temp = array[x] + array[x+1]
-            array.push(temp)
-            }
-        }  else {
-            array[0]
-    } 
-}
+    function fibonacci(Parameter) {
+        var array = [0,1]
 
-fibonacci(10)
+        if(Parameter<2) { 
+            displaying.innerHTML = [0];
+        }
+        else {
+            for(var x = 1; Parameter > array.length; x++) {
+                temp = array[x-1] + array[x]
+                array.push(temp)
+            }
+        displaying.innerHTML = array;
+    }
+    }
+
+    var z = 1;
+
+    function factorial(argument) {
+        for(var y = argument; y>0; y--) {
+            z *= y;
+        }
+        console.log(z)
+    }
+    factorial(3)
+
+
+
+
 
 //0,1,1,2,3,5,8,13,21,34
 
