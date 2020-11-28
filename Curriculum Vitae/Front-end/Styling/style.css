@@ -48,3 +48,13 @@ body {
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.blinker {
+    animation: blink 1s step-start 0s infinite;
+}
