@@ -5,6 +5,7 @@
     top:0;
     left:0;
     padding-top: 2%;
+    background-color: rgb(155, 153, 153);
 }
 
 #nav h1 {
@@ -47,6 +48,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: darkgray;
 }
 
 @keyframes blink {
@@ -57,4 +59,29 @@ body {
 
 .blinker {
     animation: blink 1s step-start 0s infinite;
+}
+
+.icon {
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+#down {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 150px;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.Icon-width i {
+    padding: 15px;
+    font-size: 30px;
+    color: black;
 }
