@@ -105,8 +105,9 @@ function Geometric(theRounds) { //child 2
 
 function Fibonacci(theCycle) { //child 3
     var result = [];
+    var temp = [];
     for(var x=0; x<=theCycle; x++) {
-        
+        result = temp[x] + temp[x-1]
     }
     return result; 
 }
