@@ -40,6 +40,23 @@ function waiting(){
     }
     })
 } 
+//showing the navi even in the smaller screen 
+var naviButton = document.querySelector(".small-navi");
+var BiggerNav = document.getElementById('nav');
+naviButton.addEventListener("click", displayNaviButton);
+var showButton = true;
 
+function displayNaviButton() {
+    if(showButton === true) {
+    BiggerNav.style.left = "0";
+    naviButton.style.left = "250px"
+    showButton = false;
+    }
+    else {
+    BiggerNav.style.left = "-250px";
+    naviButton.style.left = "0";
+    showButton = true;
+    }
+}   
 
 

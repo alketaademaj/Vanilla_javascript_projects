@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="Styling/style.css">
   </head>
   <body>
+    <button class="small-navi"><i class="fas fa-bars fa-2x"></i></button>
     <div id="nav">
       <h1>Alks</h1>
       <ul style="list-style-type:none;">
             <li onclick="scrollDown('home')"><span class="icon"><i class="fas fa-house-user"></i></span>Home</li>
             <li onclick="scrollDown('about')"><span class="icon"><i class="fas fa-user-check"></i></span>About</li>
-            <li onclick="scrollDown('academics')"><span class="icon"><i class="fas fa-graduation-cap"></i></span>Academics</li>
+            <li onclick="scrollDown('education')"><span class="icon"><i class="fas fa-graduation-cap"></i></span>Academics</li>
             <li onclick="scrollDown('experience')"><span class="icon"><i class="fas fa-layer-group"></i></span> Experience</li>
             <li onclick="scrollDown('contact')"><span class="icon"><i class="far fa-comments"></i></span> Contact</li>
           </ul>
@@ -30,9 +31,194 @@
         <a href="https://github.com/alketaademaj"><i class="fab fa-github"></i></a></p>
         <button onclick="scrollDown('contact')" id="down"><span class="icon"><i class="fas fa-trophy"></i></span>Hire me</button>
       </div>
+      <div class="about" id="about" onscroll="myscript">
+        <h1>About Me</h1>
+        <div class="about-sub-4">
+          <img src="./img/Alketa.jpg" alt="Alketa's picture"/>
+            <div class="about-container">
+                <div class="about-sub">
+                    <p>
+                      I am a Business Information Technology Graduate from Laurea University of Applied Science. 
+                      I am an aspiring front-end developer with a focus on MERN-stack. 
+                      I love playing soccer (make sure to check out my ig for the most awesome, over the top, 
+                      cool soccer tricks) and I totally rock in the field aswell. My humble personality also loves
+                      hicking and spending time in the nature. After all, they do call me mother nature. Or 
+                      something like that. All jokes aside I enjoy sports and an occasional doodling.
+                    </p>
+                </div>
+                <div class="about-sub-2">
+                    <div class="about-sub-3">
+                        <h4 class="description">Process Design</h4>
+                        <h4 class="percentage">80%</h4>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%; background-color: green"></div>
+                    </div>
+                    <div class="about-sub-3">
+                        <h4 class="description">Process Simulation</h4>
+                        <h4 class="percentage">90%</h4>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%; background-color: yellow"></div>
+                    </div>
+                    <div class="about-sub-3">
+                        <h4 class="description">Data analysis</h4>
+                        <h4 class="percentage">90%</h4>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%; background-color: rebeccapurple"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-icons">
+                <div class="about-icon-group">
+                    <i class="fas fa-fire-alt fa-3x"></i>
+                    <div class="about-icon-text">
+                        <h1 value="15">15</h1>
+                        <p>Process Modifications</p>
+                    </div>
+                </div>
+                <div class="about-icon-group">
+                    <i class="fas fa-coffee fa-3x"></i>
+                    <div class="about-icon-text">
+                        <h1 value="5">5</h1>
+                        <p>Years of experience</p>
+                    </div>
+                </div>
+                <div class="about-icon-group">
+                    <i class="far fa-clipboard fa-3x"></i>
+                    <div class="about-icon-text">
+                        <h1 value="120">120</h1>
+                        <p>Datasheets Prepared</p>
+                    </div>
+                </div>
+                <div class="about-icon-group">
+                    <i class="fas fa-microchip fa-3x"></i>
+                    <div class="about-icon-text">
+                        <h1 value="6">6</h1>
+                        <p>Simulation Environments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="education" id="education">
+        <h1>Education</h1>
+        <div class="education-container">
+            <div class="education-cluster">
+                <div class="education-group">
+                    <i class="fas fa-graduation-cap fa-2x"></i>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="education-text-group">
+                    <p>2011 to 2015</p>
+                    <h3>Bachelor's Degree</h3>
+                    <h3 class="details">
+                        Bachelor's degree in chemical engineering from SV National Institute of Technology<br />Surat,Gujarat,India
+                    </h3>
+                </div>
+            </div>
+            <div class="education-cluster">
+                <div class="education-group">
+                    <i class="fas fa-graduation-cap fa-2x"></i>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="education-text-group">
+                    <p>June'13 - August'13</p>
+                    <h3>Vocational Internship</h3>
+                    <h3 class="details">Methanol Plant, GNFC<br />Bharuch,Gujarat,India</h3>
+                </div>
+            </div>
+            <div class="education-cluster">
+                <div class="education-group">
+                    <i class="fas fa-graduation-cap fa-2x"></i>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="education-text-group">
+                    <p>July'14 - August'14</p>
+                    <h3>Vocational Internship</h3>
+                    <h3 class="details">Acetic Acid Plant, GNFC<br />Bharuch,Gujarat,India</h3>
+                </div>
+            </div>
+            <div class="education-cluster">
+                <div class="education-group">
+                    <i class="fas fa-graduation-cap fa-2x"></i>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="education-text-group">
+                    <p>2009 to 2011</p>
+                    <h3>High School</h3>
+                    <h3 class="details">Science major from BVB's Narmada Vidhyalaya,<br />Bharuch,Gujarat,India</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience" id="experience">
+        <h1>Experience</h1>
+        <div class="experience-container">
+            <div class="education-cluster">
+                <div class="education-group">
+                    <i class="fas fa-briefcase fa-2x"></i>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="education-text-group">
+                    <p>2016 to present</p>
+                    <h3>Chemical Process Design Engineer</h3>
+                    <h3 class="details">Gujarat Narmada valley Fertilizers and Chemicals Ltd<br />Bharuch,Gujarat,India</h3>
+                </div>
+            </div>
+        </div>
+        <div class="experience-card-container">
+            <div class="experience-card">
+                <h2>Capital Projects</h2>
+                <i class="fas fa-building fa-3x"></i>
+                <p>
+                    I have been part of 3 capital projects involving basic engineering, equipment design, detailed engineering,
+                    P&ID, heat and material balances, datasheet prepration, utility network design etc.
+                </p>
+            </div>
+            <div class="experience-card">
+                <h2>Process Simulation</h2>
+                <i class="fas fa-cogs fa-3x"></i>
+                <p>Years of experience witht various steady state and dynamic simualtion softwares like Aspen Plus, Aspen Hysys,
+                    Chemcad, SiNet for piping networks, HTRI for exchanger design and rating etc.</p>
+            </div>
+            <div class="experience-card">
+                <h2>Production Planning</h2>
+                <i class="fab fa-wpforms fa-3x"></i>
+                <p>Worked out various product mix scenarios, Start-up and shut-down scenarios to optimize the plant perforamnce and
+                    economics, Analyzed large databases of past data using advanced tools like Power query, BI, SQL server etc.
+                </p>
+            </div>
+            <div class="experience-card">
+                <h2>Other Skills</h2>
+                <i class="fas fa-id-card fa-3x"></i>
+                <p>Know various programming languages like Python, Java and web-development languages like HTML, CSS and Javascript
+                    and frameworks like React, Django. Also learning meachine learning and deep learning.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h1>Contact</h1>
+        <div class="contact-container">
+            <div class="name-email">
+                <div><input type="text" placeholder="Your Name" id="name"></div>
+                <div><input type="text" placeholder="Email address" id="email"></div>
+            </div>
+            <input type="text" placeholder="Subject" id="subject">
+            <textarea rows="8" cols="30" placeholder="Message"></textarea>
+            <button>Submit</button>
+        </div>
+    </div>
+</div>
+
+  <!---
       <div id='about'>
         <h1>About</h1>
-        <div>
+        <div class="about-sub-4">
+          <img src="./img/Alketa.jpg" alt="Alketa's picture"/>
+          <div class="about-container">
+            <div class="about-sub">
           <p>
             I am a Business Information Technology Graduate from Laurea University of Applied Science. 
             I am an aspiring front-end developer with a focus on MERN-stack. 
@@ -41,6 +227,7 @@
             hicking and spending time in the nature. After all, they do call me mother nature. Or 
             something like that. All jokes aside I enjoy sports and an occasional doodling.
           </p>
+
         </div>
       </div>
       <div id='academics'>
@@ -65,14 +252,14 @@
       <div id='experience'>
         <h1>Experience</h1>
         <p>
-          Jysk Oy - 8/2020
+          Jysk Oy - 8/2020 - continues
         </p>
         <p>
           Suomen tulkkauspalvelut Oy
-          TMI Alketen tulkkauspalvelu - 6/2020
+          TMI Alketen tulkkauspalvelu - 6/2020 - continues
         </p>
         <p>
-          ECCO Shoes/KRM Kenkä Oy - 1/2017 - 
+          ECCO Shoes/KRM Kenkä Oy - 1/2017 - continues
         </p>
         <p>
           Valtiovarainministeriö - 10/2019 - 4/2020
@@ -86,14 +273,16 @@
       </div>
       <div id='works'>
         <h1>Works</h1>
-        <a href="">Sivu Project</a>
-        <a href="">Java projects</a>
-        <a href="">JavaScript projects</a>
-        <a href="">MERN-stack projects</a>
+        <a href="https://github.com/alketaademaj/sivu">Sivu Project</a>
+        <a href="https://github.com/alketaademaj/Java-object-oriented">Java projects</a>
+        <a href="https://github.com/alketaademaj/Vanilla_javascript_projects">JavaScript projects</a>
+        <a href="https://github.com/alketaademaj/MERN-stack">MERN-stack projects</a>
       </div>
       <div id='contact'>
         <h1>Contact</h1>
       </div>
-    </div>
+    </div> -->
 </body>
 </html>
+
+
