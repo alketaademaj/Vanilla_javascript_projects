@@ -54,9 +54,19 @@ function displayNaviButton() {
     }
     else {
     BiggerNav.style.left = "-250px";
-    naviButton.style.left = "0";
+    naviButton.style.left = "0"; 
     showButton = true;
     }
 }   
+
+//making the skills bar go up
+//get the class/element
+var percentage_raise = document.getElementsByClassName('percentage');
+//console.log(percentage_raise)
+var bar = window.pageYOffset
+if (document.documentElement.scrollTop >=710) {
+    console.log("its working");
+}
+
 
 
