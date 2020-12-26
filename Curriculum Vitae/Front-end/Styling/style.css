@@ -5,8 +5,13 @@
     top:0;
     left:0;
     padding-top: 2%;
-    background-color: rgb(155, 153, 153);
+    background-color: #11223591;
     transition-duration: 2s;
+    color: white;
+}
+
+#about-me {
+    color: black;
 }
 
 #nav h1 {
@@ -60,7 +65,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: darkgray;
+    background-color: rgb(14, 52, 78);
 }
 
 @keyframes blink {
@@ -90,6 +95,9 @@ body {
     border-radius: 20px;
     border: none;
     outline: none;
+    background-color:#ffd15c;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .Icon-width i {
@@ -100,27 +108,12 @@ body {
 html {
     scroll-behavior: smooth;
   }
-  body {
-    background-color: #17283b !important;
-    margin: 0px !important;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-  }
   
   .icon {
     color: #ffd15c;
     padding: 1em;
   }
-  .particles-js {
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    left: 250px;
-    height: 100%;
-    width: 100%;
-    z-index: -5;
-    transition: 0.4s;
-  }
+
   .main {
     /* position: fixed; */
     margin-left: 250px;
@@ -131,14 +124,7 @@ html {
     /* width: 83.5%; */
     /* height: 100%; */
   }
-  .main img {
-    width: 130px;
-    height: 130px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-  }
+
   .main h1,
   p {
     text-align: center;
@@ -179,6 +165,7 @@ html {
   }
   .scroll-down p {
     margin: 0px;
+
   }
   .scroll-down a {
     color: white;
@@ -230,14 +217,15 @@ html {
   .about-sub button {
     margin-left: 0;
   }
-  .about img {
-    float: left;
-    vertical-align: top;
+
+  #about img {
+    border-radius: 60%;
+    width: 20%;
+    height: 25%;
     margin-top: 20px;
-    margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 50px;
   }
+
   .about-sub-2 {
     overflow: hidden;
     width: 350px;
@@ -325,7 +313,7 @@ html {
     background-color: #11223591;
     border-radius: 30px;
     margin-bottom: 50px;
-    color: rgb(146, 43, 43);
+    color: #ffd15c;
     font-size: 12px;
   }
   .education-group {
@@ -337,7 +325,7 @@ html {
     margin-left: 15px;
     margin-top: 10px;
     width: 1px;
-    background-color: rgb(146, 43, 43) !important;
+    background-color: #ffd15c !important;
   }
   .education-cluster {
     display: flex;
@@ -378,7 +366,7 @@ html {
     background-color: #11223591;
     border-radius: 30px;
     margin-bottom: 20px;
-    color: rgb(146, 43, 43);
+    color: #ffd15c;
     font-size: 12px;
   }
   .experience-card-container {
@@ -473,7 +461,7 @@ html {
   .contact-container button {
     font-size: 1rem;
     font-weight: bold;
-    color: white;
+    color: black;
     margin: 20px;
     margin-left: 0;
     width: 150px;
@@ -481,7 +469,7 @@ html {
     border-radius: 20px;
     border: none;
     outline: none;
-    background-color: #ff4c60;
+    background-color:#ffd15c;
     transition: transform 0.2s;
     box-shadow: 0 0 1px transparent;
     transform: perspective(1px) translateZ(0);
@@ -517,8 +505,5 @@ html {
     }
     .main {
       margin-left: 0;
-    }
-    .particles-js {
-      left: 0;
     }
   }
