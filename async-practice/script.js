@@ -104,17 +104,30 @@ function Geometric(theRounds) { //child 2
 }
 
 function Fibonacci(theCycle) { //child 3
-    var result = [];
-    var temp = [];
-    for(var x=0; x<=theCycle; x++) {
-        result = temp[x] + temp[x-1]
+    var result = [0,1]; //[0,1,1]
+    for(var x=0; x<=theCycle; x++) { //2.nd
+        result.push(result[x] + result[x+1]) //result[0,1,1] push = result[1] + result[1+1(=2)]
     }
     return result; 
 }
 
 function Execution(theChoice, theParam) { //parent
     console.log(Name("Tanay"));
-    console.log(Fibonacci(6))
+    console.log(Fibonacci(10))
 }
 
 Execution()
+
+//pyramid 
+//x
+//xx
+//xxx
+//xxxx
+var text = "x";
+console.log("x")
+for(var x = 0; x<5; x++){
+    text += "x";
+    for(var y = x; y>0; y--) {
+    console.log(text)
+    }
+} 
