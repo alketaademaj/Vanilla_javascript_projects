@@ -134,7 +134,38 @@ window.addEventListener('scroll', () => {
 //console.log(typeof(test1)) -> checking the type of variable
 //console.log(progress_bar[0].style.width = percentage)
 
+//grabbing the element 
+var color_change = document.querySelectorAll('.experience-card');
 
+window.onload = () => {
+    color_change.forEach((elem) => //it excepts a function as an argument
+    {
+        var random = Math.floor(Math.random() * colors.length); //picks a random number between 0 and 9
+        // console.log(elem)
+         elem.style.backgroundColor = colors[random] 
+    });
+}
+//window.onload = () => {
+   // for(var x = 0; x<4; x++){
+      //  myFunction(x)
+  //  }
+//  };
+
+//console.log(color_change[0])
+
+//the colors I want to change to 
+var colors = [
+    "#FFC0CB",
+    "#90EE90",
+    "#FFD700",
+    "#FF1493",
+    "#8FBC8F",
+    "#FF7F50",
+    "#DC143C",
+    "#8A2BE2",
+    "#7FFF00",
+    "#00FFFF"
+]
 
 
 
