@@ -59,6 +59,25 @@ function displayNaviButton() {
     }
 }
 
+    window.addEventListener('scroll', () => {
+        
+    var fadingEffect = document.getElementById('about-me');
+    if(document.documentElement.scrollTop + window.innerHeight >= fadingEffect.offsetTop){
+        fadingEffect.style.opacity = "1";
+        fadingEffect.style.margin = "10px";
+    }
+    })
+// var setTheFade = true;
+//     if(setTheFade === true) {
+//         fadingEffect.style.top = "100"
+//         setTheFade = false;
+//     }
+//     else  {
+//         fadingEffect.style.top = "-100"
+//         fadingEffect.style.opacity = "0";
+//         setTheFade = true;
+//     }
+
 //making the skills bar go up
 //get the class/element
 var percentage_raise = document.querySelectorAll('.percentage');

@@ -26,6 +26,10 @@
     transition-duration: 2s;
 }
 
+li:hover {
+  color:#ffd15c;
+}
+
 #main{
     margin-left: 250px;
     transition-duration: 2s;
@@ -40,6 +44,7 @@
     #main{
         margin-left: 0px;
     }
+    
   }
 
 #home img {
@@ -147,36 +152,6 @@ html {
     justify-content: center;
     margin-bottom: 60px;
   }
-  .home-buttons button,
-  .about button {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    margin: 20px;
-    width: 150px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    background-color: #ff4c60;
-    transition: transform 0.2s;
-    box-shadow: 0 0 1px transparent;
-    transform: perspective(1px) translateZ(0);
-  }
-  .scroll-down p {
-    margin: 0px;
-
-  }
-  .scroll-down a {
-    color: white;
-    text-decoration: none;
-  }
-  .scroll-down {
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
   
   .about {
     color: white;
@@ -185,7 +160,13 @@ html {
     padding-left: 50px;
     margin-bottom: 160px;
   }
-  .about h1 {
+
+  #about-me {
+    opacity: 0;
+    transition-duration: 3s;
+  } 
+
+  .about h1 { 
     text-align: left;
   }
   .about-container {
