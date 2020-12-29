@@ -61,10 +61,10 @@ function displayNaviButton() {
 
     window.addEventListener('scroll', () => {
         
-    var fadingEffect = document.getElementById('about-me');
-    if(document.documentElement.scrollTop + window.innerHeight >= fadingEffect.offsetTop){
-        fadingEffect.style.opacity = "1";
-        fadingEffect.style.margin = "10px";
+    var aboutMe = document.getElementById('about-me');
+    if(document.documentElement.scrollTop + window.innerHeight >= aboutMe.offsetTop){
+        aboutMe.style.opacity = "1";
+        aboutMe.style.margin = "10px";
     }
     })
 // var setTheFade = true;
