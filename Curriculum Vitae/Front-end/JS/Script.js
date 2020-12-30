@@ -59,24 +59,35 @@ function displayNaviButton() {
     }
 }
 
+//fading effect 
     window.addEventListener('scroll', () => {
-        
+
     var aboutMe = document.getElementById('about-me');
     if(document.documentElement.scrollTop + window.innerHeight >= aboutMe.offsetTop){
         aboutMe.style.opacity = "1";
-        aboutMe.style.margin = "10px";
+        aboutMe.style.transform = "translate(0, 0)";
+        //aboutMe.style.margin = "10px";
     }
+    var educationFade = document.getElementsByClassName("education")[0].querySelector("h1");
+    var experienceFade = document.getElementsByClassName("experience")[0].querySelector("h1"); //use the dot only when using queryselector
+    var contactFade = document.getElementsByClassName("contact")[0].querySelector("h1");
+    var fadeEducation = document.querySelectorAll(".education-cluster");
+   // console.log(educationFade);
+        var fading = [educationFade, experienceFade, contactFade];
+        //console.log(fading)
+        fading.forEach((elem) => {
+            if (document.documentElement.scrollTop + window.innerHeight >= elem.offsetTop) {
+                elem.style.transform = "translate(0, 0)";
+                elem.style.opacity = "1";
+            }
+        })
+        fadeEducation.forEach((elem1) => {
+            if (document.documentElement.scrollTop + window.innerHeight >= elem1.offsetTop) {
+                elem1.style.opacity = "1";
+                elem1.style.transform = "translate(0, 0)";
+            }
+        })
     })
-// var setTheFade = true;
-//     if(setTheFade === true) {
-//         fadingEffect.style.top = "100"
-//         setTheFade = false;
-//     }
-//     else  {
-//         fadingEffect.style.top = "-100"
-//         fadingEffect.style.opacity = "0";
-//         setTheFade = true;
-//     }
 
 //making the skills bar go up
 //get the class/element
@@ -186,6 +197,42 @@ var colors = [
     "#00FFFF"
 ]
 
+//creating the object that has all the data that needs to be send using the form 
+function submit() {
+    //change the button to sending...
+    var sendingButton = document.getElementById("sending");
+    sendingButton.innerHTML = "Sending..."
+    //grabbing the data 
+    var from_name = document.getElementById("name").value;
+    var reply_to = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    var sendData = {
+        from_name,
+        reply_to,
+        subject,
+        message
+    };
+    //console.log(sendData)
+    //validation
+    if(from_name != "" && reply_to!= "" && message != "") {
+        //sending the email 
+        emailjs.send("service_okfgmtr","template_ihssi5p", sendData)
+        .then(() => {
+            alert("Message has been send!")
+            //change the button to submit
+            sendingButton.innerHTML = "Submit"
+            //empty the form
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+        }).catch((error) => {
+            console.log(error) //whichever error we get, it will be given in function as a parameter 
+        })
+    }
+}
 
 
 
